@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<p>统计结果文件保存目录:<span th:text="${resultPath}"></span></p>
+<form action="#" th:action="@{/shutdown}"  method="post" enctype="application/x-www-form-urlencoded">
+    <p><input type="submit" value="关闭小工具" /></p>
+</form>
+</body>
+</html>
