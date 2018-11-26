@@ -5,7 +5,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
+<!--<a th:href="@{http://127.0.0.1:8080/index}">返回</a>-->
 <p>统计结果文件保存目录:<span th:text="${resultPath}"></span></p>
+<!--<input type="button" name="modify" onclick="var u_id = document.getElementById('u_id').value;location.href='modifyUser.php？user=u_id';" value="修改" />-->
+<input type="button" name="goback" onclick="location.href='/index'" value="返回"/>
 <form action="#" th:action="@{/shutdown}"  method="post" enctype="application/x-www-form-urlencoded">
     <p><input type="submit" value="关闭小工具" /></p>
 </form>

@@ -87,7 +87,7 @@
 					<include>**/*.jar</include>
 				</includes>
 			</resource>
-		<!-- 某些情况下，打包后运行不起来需要打开注释 -->
+		<!-- 一般本地调试时，需要将其注释掉，某些情况下，打包后运行不起来需要打开注释 -->
 			<resource>
 				<directory>src/main/resources</directory>
 				<targetPath>BOOT-INF/classes/</targetPath>
